@@ -1,23 +1,51 @@
-<<<<<<< HEAD
-## Getting Started
+                                                                     Student Record System
+*Project Overview
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+The Student Record System is a console-based Java application that allows users to manage student records, including adding, updating, deleting, searching, and saving/loading data from a file.
 
-## Folder Structure
+Features
 
-The workspace contains two folders by default, where:
+1.Add new students with ID, name, and date of birth
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+2.Update student information
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+3.Delete student records
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+4.Find student by ID or Name
 
-## Dependency Management
+5.List all students
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
-=======
-# student_record_system
-Student Record System with Core Java
->>>>>>> 13729e9ef454338092e7b1e2a1b53a60e359288e
+6.Save student records to a file
+
+7.Load student records from a file
+
+StudentRecordSystem/
+│
+├─ src/
+│   ├─ App.java
+│   ├─ Student.java
+│   ├─ StudentManager.java
+│   ├─ FileHandler.java
+│   ├─ Helper.java
+│
+└─ students.txt  (data file for saving records)
+
+App.java → main application with menu
+
+Student.java → defines Student object
+
+StudentManager.java → manages all student operations
+
+FileHandler.java → handles saving/loading data to/from file
+
+Helper.java → prints banner and formatting
+
+1. Add Students
+2. Update Student
+3. Delete Student
+4. Find Student By ID
+5. Find Student By Name
+6. List All Students
+7. Save To File
+8. Load From File
+9. Exit
