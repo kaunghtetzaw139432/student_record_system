@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class App {
     static Scanner input;
     static StudentManager studentManager = new StudentManager();
-    static FileHandler fileHandler=new FileHandler();
+    static FileHandler fileHandler = new FileHandler();
 
     public static void main(String[] args) throws Exception {
         input = new Scanner(System.in);
@@ -31,7 +31,8 @@ public class App {
                     String name = input.nextLine();
                     System.out.print("Enter Student DOB (YYYY-MM-DD) : ");
                     String birthday = input.nextLine();
-                    studentManager.addStudent(new Student(id, name, birthday));
+                    String reslult = studentManager.addStudent(new Student(id, name, birthday));
+                    System.out.println(reslult);
                     break;
                 case 2:
                     System.out.print("Enter ID to update : ");
@@ -78,14 +79,14 @@ public class App {
                     studentManager.allStudent();
                     break;
                 case 7:
-                  
+
                     System.out.println(
                             studentManager.saveToFile());
                     break;
 
                 case 8:
-                  
-                   studentManager.loadFile();
+
+                    studentManager.loadFile();
                     System.out.println("Loaded from file");
                     break;
 

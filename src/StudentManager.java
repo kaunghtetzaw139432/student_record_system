@@ -5,8 +5,14 @@ import java.util.List;
 public class StudentManager {
     private List<Student> students = new ArrayList<>();
 
-    public void addStudent(Student student) {
-        students.add(student);
+    public String addStudent(Student student) {
+         for(Student s :students){
+            if (s.getId()==student.getId()) {
+                return "Error : Student Id " + student.getId() + " already exists!";
+            }
+         }
+          students.add(student);
+          return "Student added successfully";
     }
 
     public Student findStudentById(int id) {
