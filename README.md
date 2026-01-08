@@ -20,18 +20,28 @@ It supports adding, updating, deleting, searching, and saving/loading student da
 
 ---
 
-## Project Structure
+# 🎓 Student Record System (Console Application)
 
-StudentRecordSystem/
-├─ src/
-│ ├─ App.java (Main application with menu)
-│ ├─ Student.java (Defines Student object)
-│ ├─ StudentManager.java (Manages all student operations)
-│ ├─ FileHandler.java (Handles saving/loading data to/from file)
-│ ├─ Helper.java (Utility functions, banner, formatting)
-├─ students.txt (Data file for saving student records)
-├─ README.md (Project description)
-├─ .gitignore (Optional, ignore compiled files/IDE files)
+A lightweight Java SE application designed to manage student records efficiently using File I/O for data persistence.
+
+---
+
+## 🏗 Project Structure (Flat Package)
+
+All source files are located directly in the `src` directory for simplicity and fast development.
+
+
+STUDENT RECORD SYSTEM/
+├── src/
+│   ├── App.java            # Entry point: Handles Main Menu and User Input
+│   ├── Student.java        # Model: Defines Student object (ID, Name, Grade, etc.)
+│   ├── StudentManager.java # Service: Core logic for Add, View, and Delete operations
+│   ├── FileHandler.java    # Data: Handles saving/loading records to students.txt
+│   ├── Helper.java         # Utilities: UI formatting, banners, and input validation
+│   └── students.txt        # Database: Text-based storage for student data
+├── bin/                    # Compiled .class files
+├── README.md               # Project documentation
+        
 
 
 ---
