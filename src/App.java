@@ -27,10 +27,20 @@ public class App {
                     System.out.print("Enter Student ID : ");
                     int id = input.nextInt();
                     input.nextLine();
+
                     System.out.print("Enter Student Name : ");
                     String name = input.nextLine();
-                    System.out.print("Enter Student DOB (YYYY-MM-DD) : ");
-                    String birthday = input.nextLine();
+
+                    String birthday;
+                    while (true) {
+                        System.out.print("Enter Student DOB (YYYY-MM-DD) : ");
+                        birthday = input.nextLine();
+
+                        if (Validator.isValidDOB(birthday)) {
+                            break;
+                        }
+                    }
+
                     String reslult = studentManager.addStudent(new Student(id, name, birthday));
                     System.out.println(reslult);
                     break;
